@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Innovation</title>
+    <style>
+        label{
+            padding: 12px;
+        }
+        input{
+            text-decoration: none;
+            padding: 12px;
+            margin: 15px;
+            color: black;
+            background-color: aliceblue;
+            transition: width .35s;
+            -webkit-transition: width .35s;
+            overflow: hidden
+        }
+    </style>
+</head>
+<body style='background:gray;'>
+    <center>
+    <label>Platforme pour l'envoie de fichiers dans le cadre CIMR</label><br>
+    <br>
+    <input type="text" placeholder="Email"><br>
+    <br>
+    <input type="password" id="pass" placeholder="Password"><br>
+    <br>
+    <input type="checkbox" onclick="showpass()">
+    <label>Show password</label>
+    <br>
+    <input type="button" value="Submit" onclick="window.location.href='fichier_soumettre.html'"></center>
+    <script>
+        function showpass(){
+            var ur=document.getElementById("pass");
+            if (ur.type=="password"){
+                ur.type="text";
+            }
+            else {
+                ur.type="password";
+            }
+        }
+    </script>
+</body>
+
+</html>
